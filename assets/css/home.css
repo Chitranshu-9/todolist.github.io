@@ -1,0 +1,177 @@
+body{
+    text-align: center;
+}
+
+img{
+  object-fit: cover;
+}
+
+.container{
+  margin-top: -20%;
+  margin-bottom: 5%;
+  margin-left: 1%;
+}
+
+/* Heading(h1) */
+h1{
+    font-family:  'Franklin Gothic Medium';
+    font-weight: bolder;
+    color: grey;
+    margin-top: 4%;
+    
+}
+/* removing dots from unordered list */
+ul{
+    list-style: none;
+    font: 1em helvetica;
+}
+
+/* styling of input tag for task */
+input[type=text] {
+    width: 20%;
+    /* padding: 12px 20px; */
+    margin: 8px 0;
+    margin-top: -5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    font: 1em helvetica;
+    height: 35px;
+    
+
+    /* shadow part */
+    box-shadow:  inset 0 0 5px #ccc;
+    box-shadow:5px 5px whitesmoke;
+    
+  }
+  /* date */
+  input[type= "date"] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-top: -5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    outline: none;
+    text-align: center;
+    font: 1em helvetica;
+    height: 17px;
+    width: 11%;
+    content: "\f073";
+    
+
+    /* shadow part */
+    box-shadow:  inset 0 0 5px #ccc;
+    box-shadow:5px 5px whitesmoke;
+    color:#757575;
+  }
+
+  /* Add button */
+  #add_task:hover{
+    cursor: pointer;
+  }
+  /* date area */
+  #date_icon{
+    height: 17px;
+    width: 17px;
+    border-radius: 5px;
+    background-color: aqua;
+  }
+
+  input[type= "date"]::-webkit-calendar-picker-indicator{
+    display: none;
+    -webkit-appearance: none;
+  }
+  /* Category */
+  #category{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 26px;
+    margin: 10px;
+    box-shadow:5px 5px whitesmoke;
+    font: 0.8em helvetica;
+    color:#7e7e7e;
+  }
+  
+  #category:hover{
+    cursor: pointer;
+  }
+
+  /* Add Button */
+  button{
+    border: none;
+    border-radius: 5px;
+    height: 35px;
+    width: 35px;
+    margin: 15px;
+    margin-top: 1%;
+    background-color: #ffe2dc;
+    box-shadow:5px 5px whitesmoke;
+    color: white;
+  }
+    /* Display Field */
+    
+    #cbox{
+    position: absolute;
+    left: 1.5%;
+    top: 20%;
+  }
+
+
+  .content{
+    width: 80%;
+    position: relative;
+    height: 40px;
+    border: 2px solid whitesmoke;
+    top: 10%;
+    border-radius: 10px;
+    text-align: unset;
+    left: 8%;
+    display: flex;
+  }
+
+  #task{
+    left: 50px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    
+  }
+
+  #date{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    font-size: 12px;
+    text-align: center;
+    
+  }
+
+  #category_displayed{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: 250px;
+    top: 10px;
+    
+  }
+
+  #delete_button{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    right: 5px;
+    top: 10px;
+    
+  }
+
+  /* when task is checked */
+  input[type=checkbox]:checked ~ .itemAdded .itemChecked{
+    text-decoration: line-through;
+  }
+
